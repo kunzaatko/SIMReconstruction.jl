@@ -1,0 +1,7 @@
+name = "SIMReconstruction"
+uuid = "340e2c87-77e6-43c6-b8ac-bfdcf5517047"
+authors = ["Martin Kunz <martinkunz@email.cz> and contributors"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1"
