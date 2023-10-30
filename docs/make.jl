@@ -12,14 +12,28 @@ makedocs(;
         prettyurls=get(ENV, "CI", "false") == "true",
         canonical="https://kunzaatko.github.io/SIMReconstruction.jl",
         edit_link="trunk",
-        assets=String[],
+        assets=String[]
     ),
     pages=[
         "Home" => "index.md",
-    ],
+        "Theory" => "pages/01_theory.md",
+        "General Interface" => "pages/02_interface.md",
+        "Reconstruction" => [
+            "pages/03_reconstrution_algorithms.md",
+            "Algorithms" => [
+                "Wiener Deconvolution" => "pages/03_reconstrution_algorithms/01_wiener.md",
+                "Richardson-Lucy Deconvolution" => "pages/03_reconstrution_algorithms/02_rl.md",
+                "Optimization Reconstruction" => "pages/03_reconstrution_algorithms/03_opt.md",
+                "Wiener Deconvolution" => "pages/03_reconstrution_algorithms/01_wiener.md",
+            ]
+        ],
+        "References" => [
+            "API" => "pages/05_apireference.md",
+            "Bibliography" => "pages/06_bibliography.md"
+        ]]
 )
 
 deploydocs(;
     repo="github.com/kunzaatko/SIMReconstruction.jl",
-    devbranch="trunk",
+    devbranch="trunk"
 )
